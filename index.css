@@ -8,7 +8,6 @@ body {
     display: grid;
     grid-template-rows: 1fr 4fr;
     grid-template-columns: 1fr 4fr;
-    background-color: green;
     height: 100vh;
     width: 100vw;
 }
@@ -16,17 +15,115 @@ body {
 sidebar {
     grid-row: 1/5;
     grid-column: 1;
-    background-color: red;
+    background-color: #1992d4
 }
 
 header {
-    grid-row: 2;
+    grid-row: 1;
     grid-column: 2/5;
-    background-color: blue;
+    background-color: #ffffff;
+    box-shadow: #ccd1d8 0 4px 4px;
+    z-index: 2;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding: 8px 18px;
+    align-items: center;
+}
+
+header > div {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 5fr 2fr;
+    align-items: center;
+}
+
+.row1 .left {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    justify-items: self-start;
+    padding-right: 18px;
+}
+
+.row1 .left span {
+    height: 32px;
+    width: 32px;
+    justify-self: end;
+    padding-right: 12px;
+    padding-top: 8px;
+}
+
+.row1  .left input {
+    outline: none;
+    border: none;
+    background-color: #e2e8f0;
+    height: 24px;
+    border-radius: 24px;
+    width: 100%;
+}
+
+.row1 .right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    align-items: center;
+}
+
+.row1 .right .bell {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    justify-self: start;
+    padding-right: 16px;
+    padding-top: 8px;
+    justify-self: end;
+}
+
+.row1 .right .profile-pic-1 {
+    width: 42px;
+    height: 42px;
+    background-color: yellow;
+    border-radius: 42px;
+}
+
+.row2 .left .profile-pic-2 {
+    height: 56px;
+    width: 56px;
+    border-radius: 56px;
+    background-color: yellow;
+
+}
+
+.row2 .left .user-info {
+    padding-left: 8px;
+}
+
+.row2 .left .user-info span {
+    font-size: small;
+}
+
+.row2 .right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.row2 .right button {
+    padding: 8px 12px;
+    border-radius: 24px;
+    background-color: #1992d4;
+    color: white;
+    width: 72px;
+    outline: none;
+    border: none;
+    font-size: small;
+    font-weight: bold;
 }
 
 main {
     grid-row: 2/5;
     grid-column: 2/5;
-    background-color: aqua;
+    background-color: #e2e8f0;
 }
