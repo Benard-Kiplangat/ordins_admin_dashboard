@@ -39,7 +39,7 @@ header > div {
     align-items: center;
 }
 
-.row1 .left {
+.row1 .left, .row2 .left {
     display: grid;
     grid-template-columns: 50px 1fr;
     align-items: center;
@@ -96,7 +96,7 @@ header > div {
 }
 
 .row2 .left .user-info {
-    padding-left: 8px;
+    margin-left: 18px;
 }
 
 .row2 .left .user-info span {
